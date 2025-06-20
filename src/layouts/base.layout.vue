@@ -76,8 +76,8 @@ const tools = computed<ToolCategory[]>(() => [
                 :href="`https://github.com/CorentinTh/it-tools/tree/${commitSha}`"
               >
                 {{ commitSha }}
-              </c-link> -->
-            </template>
+              </c-link> 
+            </template> -->
           </div>
           <div>
             © {{ new Date().getFullYear() }}

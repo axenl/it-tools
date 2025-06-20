@@ -63,7 +63,7 @@ const tools = computed<ToolCategory[]>(() => [
           <div>
             IT-Tools
 
-            <c-link target="_blank" rel="noopener" :href="`https://github.com/CorentinTh/it-tools/tree/v${version}`">
+           <!-- <c-link target="_blank" rel="noopener" :href="`https://github.com/CorentinTh/it-tools/tree/v${version}`">
               v{{ version }}
             </c-link>
 
@@ -76,13 +76,13 @@ const tools = computed<ToolCategory[]>(() => [
                 :href="`https://github.com/CorentinTh/it-tools/tree/${commitSha}`"
               >
                 {{ commitSha }}
-              </c-link>
+              </c-link> -->
             </template>
           </div>
           <div>
             © {{ new Date().getFullYear() }}
-            <c-link target="_blank" rel="noopener" href="https://corentin.tech?utm_source=it-tools&utm_medium=footer">
-              Corentin Thomasset
+            <c-link target="_blank" rel="noopener" href="https://github.com/axenl/it-tools">
+              GitHub
             </c-link>
           </div>
         </div>
@@ -114,7 +114,7 @@ const tools = computed<ToolCategory[]>(() => [
 
         <command-palette />
 
-        <locale-selector v-if="!styleStore.isSmallScreen" />
+       <!-- <locale-selector v-if="!styleStore.isSmallScreen" /> -->
 
         <div>
           <NavbarButtons v-if="!styleStore.isSmallScreen" />
